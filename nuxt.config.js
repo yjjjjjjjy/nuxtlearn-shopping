@@ -39,5 +39,10 @@ export default {
   server: {
     // nuxt.js 안에서 기본적으로 제공되는 환경 변수, 로컬 실행시: developmode모드, 배포시: productionmode
     port : process.env.NODE_ENV === 'production' ? null :5000
+  },
+
+  // env config
+  env: {
+    baseURL:  process.env.NODE_ENV === 'production' ? 'https://my-json-server.typicode.com/yjjjjjjjy/nuxtlearn-shopping-api' : 'http://localhost:3000'
   }
 }
